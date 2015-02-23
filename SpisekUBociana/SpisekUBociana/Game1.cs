@@ -11,12 +11,12 @@ using Microsoft.Xna.Framework.Media;
 
 namespace SpisekUBociana
 {
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class GameSpisekUBociana : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Game1()
+        public GameSpisekUBociana()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
