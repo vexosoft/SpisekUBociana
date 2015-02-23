@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpisekUBociana", "SpisekUBociana\SpisekUBociana\SpisekUBociana.csproj", "{777948D7-2CDC-47AD-A3FD-AFEB329B6FE5}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "SpisekUBocianaContent", "SpisekUBociana\SpisekUBocianaContent\SpisekUBocianaContent.contentproj", "{031D255E-85D6-4FE6-9BC4-559C48F7D239}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{777948D7-2CDC-47AD-A3FD-AFEB329B6FE5}.Debug|x86.ActiveCfg = Debug|x86
+		{777948D7-2CDC-47AD-A3FD-AFEB329B6FE5}.Debug|x86.Build.0 = Debug|x86
+		{777948D7-2CDC-47AD-A3FD-AFEB329B6FE5}.Release|x86.ActiveCfg = Release|x86
+		{777948D7-2CDC-47AD-A3FD-AFEB329B6FE5}.Release|x86.Build.0 = Release|x86
+		{031D255E-85D6-4FE6-9BC4-559C48F7D239}.Debug|x86.ActiveCfg = Debug|x86
+		{031D255E-85D6-4FE6-9BC4-559C48F7D239}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
