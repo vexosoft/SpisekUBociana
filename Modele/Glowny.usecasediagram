@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="89741c09-4a9f-4c88-89e4-70ae6fa7d169" name="Glowny" linkedPackageId="26b9a8af-6322-4430-a198-c2d8f67523fd" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="1acb3b0d-3cc6-48d2-8c41-b53c99a84236">
+      <profileInstance Id="1eddb6f3-cb71-4e6f-a4e5-3015be7de527" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4cefdfb5-40cd-4831-bbd4-f52da81480e2">
+      <profileInstance Id="12294c5d-c3b0-42de-bbfa-2c8b6a979d76" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="9ee857f2-e91f-4012-bb94-5a60e1c9d691" name="Gracz" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aec08feb-acbf-44b0-a7be-86b33423c4c2" />
+        <targetEnds>
+          <association Id="223570cb-e55d-45a2-940a-63573c06dd57" isDerived="false" sourceEndRoleName="Gracz" targetEndRoleName="Strzela" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="645f90c7-d188-4dba-b569-bec5618cb52b" LastKnownName="Strzela" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd32bd9d-6fb4-4b05-bf11-398cc815db50" name="Gracz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="03bd3efa-3e4e-45fa-b8ea-e5867e13d420" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64cd0f25-baab-422d-9c48-97139dd1b6ea" name="Strzela" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a2d1f541-df27-437d-97b5-9efc8e6b0187" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c657369-3120-47dc-b7c4-fee02c5763a0" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="645f90c7-d188-4dba-b569-bec5618cb52b" name="Strzela" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf1ce7e9-2f55-4563-af2a-f12e4e221fcf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="981aedfb-52b4-4aa6-8112-9b52a24ee1c3" name="Wróg" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="23b6aa07-2440-426d-931d-28a2a476fbca" />
+        <targetEnds>
+          <association Id="51bf3744-3e00-44eb-9591-b47b0ed6066b" isDerived="false" sourceEndRoleName="Wróg" targetEndRoleName="Strzela" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="06c57169-f8a7-4fb7-825f-3910ef555a6f" LastKnownName="Strzela" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="433aaa9d-06ff-4be2-9c5c-309356badf64" name="Wróg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ffe75003-6db9-4199-9ec5-79944a5a77cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa52013c-7567-498d-8adb-0f478eda0952" name="Strzela" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4453808b-d9ce-498b-8d83-fd65ff7e19c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="485701fe-fb62-48c3-8be3-3936a096fd97" />
+          </association>
+          <association Id="409d401a-f879-4b88-9692-2420cd5bee50" isDerived="false" sourceEndRoleName="Wróg" targetEndRoleName="Pokazuje się" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="012dad0b-b240-4519-bcca-3cab395ec3e4" LastKnownName="Pokazuje się" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e7e0644-1484-4790-9a4f-d5261ac9aa08" name="Wróg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="976d17a3-f395-46a1-8d0a-5e70d0dfc9ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4964a73-574a-4da7-833d-e1252d349f63" name="Pokazuje się" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8ba391b2-9608-4c92-9ec2-09a1903f5f68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f152eee7-a74a-4a18-853e-3a8c1d467d63" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="06c57169-f8a7-4fb7-825f-3910ef555a6f" name="Strzela" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0724f93-c803-4e9e-b20a-8c5a5a7b3325" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="012dad0b-b240-4519-bcca-3cab395ec3e4" name="Pokazuje się" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a1f89ca-081c-4763-8e7e-088e1e1f9d23" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="65fa4367-bd4d-40e4-938b-b86b6f0c950e" name="Świat" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f761fdea-f22b-4c3a-b1f9-bb4cba4c1927" />
+        <targetEnds>
+          <association Id="4de65bb1-4c21-4958-93e0-2057cee5ed60" isDerived="false" sourceEndRoleName="Świat" targetEndRoleName="Tworzy wrogów" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89b3edbd-8f79-40aa-a363-15a1b8948e48" LastKnownName="Tworzy wrogów" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="410e2c48-564e-4ea8-a85d-5c65ff89ac6f" name="Świat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="25bf5e37-9ed3-4fc8-a740-3a916321f416" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="610c65fb-d2d1-4c1d-8fae-df2ff92ae995" name="Tworzy wrogów" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a7c768cb-99f3-4d29-8fd7-c7915c29a6a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cc96c214-19bd-4ebb-b515-e555f90503b0" />
+          </association>
+          <association Id="ce90d4e8-ccf2-459c-bed2-2cb1e3caba43" isDerived="false" sourceEndRoleName="Świat" targetEndRoleName="Przeprowadza do następnej rundy" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="50ddd0d5-9930-4b7d-a515-6fba6916e73b" LastKnownName="Przeprowadza do następnej rundy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da28c288-48eb-4116-8c73-1b2d754114d5" name="Świat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d67ee4d-6b7c-4026-a943-0bed88d6050e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6421d0de-6070-491a-a390-21c8e1e5a695" name="Przeprowadza do następnej rundy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f293983-156f-454a-866a-2b69bf864bac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a99851a4-09ac-47c9-8232-388ddab6ef0b" />
+          </association>
+          <association Id="22afe5e1-7e30-4de3-b8fb-cafc6917eaa1" isDerived="false" sourceEndRoleName="Świat" targetEndRoleName="Sprawdza trafienia" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fa83f636-0afb-4c14-acbc-def738ad266b" LastKnownName="Sprawdza trafienia" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d07dc1d5-ed6a-4964-80d8-e58e22627095" name="Świat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe32503f-ae3a-4b44-bd07-710523f05d8f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22594ed9-198d-4440-898c-eb870f810fd0" name="Sprawdza trafienia" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a31cbbfb-da09-4a90-90e2-e9b8e43bb74f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bdeca0f4-0993-445b-81ac-598294ef237e" />
+          </association>
+          <association Id="7932f76d-a34c-42c8-ba04-3ad24c960f55" isDerived="false" sourceEndRoleName="Świat" targetEndRoleName="Wyświetla historię" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7224f21c-0a33-46bf-80bc-94ff4e8d2278" LastKnownName="Wyświetla historię" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c39a036-d51a-48ec-9efb-6e22295790fb" name="Świat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d6f683da-9651-4f59-a646-5d9098123a3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="980ed1a4-61be-4678-80e6-14e6dce128a2" name="Wyświetla historię" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="be153bbe-16b5-4d74-861d-8e8b790fed08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18cb5bcc-ab04-43ac-a005-17661dfdd3a1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="89b3edbd-8f79-40aa-a363-15a1b8948e48" name="Tworzy wrogów" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b25f5c0b-429f-49fb-bc21-56ff3e39e00c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="50ddd0d5-9930-4b7d-a515-6fba6916e73b" name="Przeprowadza do następnej rundy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41408086-26d8-4206-a380-10c88382277e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa83f636-0afb-4c14-acbc-def738ad266b" name="Sprawdza trafienia" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f75caeb3-88d1-48ce-b73d-0cad078772a6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7224f21c-0a33-46bf-80bc-94ff4e8d2278" name="Wyświetla historię" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d32a8cf7-586e-4b33-8b95-7e34ba7eba25" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="26b9a8af-6322-4430-a198-c2d8f67523fd" name="Modele">
+    <elementDefinition Id="61f443f9-166c-4ceb-a2bc-211604d80bdc" />
+  </package>
+</useCaseModelRoot>

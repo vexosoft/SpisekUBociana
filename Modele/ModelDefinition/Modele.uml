@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="61f443f9-166c-4ceb-a2bc-211604d80bdc"
+  name="Modele" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="aec08feb-acbf-44b0-a7be-86b33423c4c2"
+        name="Gracz"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1c657369-3120-47dc-b7c4-fee02c5763a0"
+            isDerived="false"
+            sourceEndRoleName="Gracz"
+            targetEndRoleName="Strzela"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cf1ce7e9-2f55-4563-af2a-f12e4e221fcf"
+              LastKnownName="Strzela"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03bd3efa-3e4e-45fa-b8ea-e5867e13d420"
+                  name="Gracz"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2d1f541-df27-437d-97b5-9efc8e6b0187"
+                  name="Strzela"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cf1ce7e9-2f55-4563-af2a-f12e4e221fcf"
+        name="Strzela"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="23b6aa07-2440-426d-931d-28a2a476fbca"
+        name="Wróg"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="485701fe-fb62-48c3-8be3-3936a096fd97"
+            isDerived="false"
+            sourceEndRoleName="Wróg"
+            targetEndRoleName="Strzela"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e0724f93-c803-4e9e-b20a-8c5a5a7b3325"
+              LastKnownName="Strzela"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ffe75003-6db9-4199-9ec5-79944a5a77cc"
+                  name="Wróg"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4453808b-d9ce-498b-8d83-fd65ff7e19c5"
+                  name="Strzela"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f152eee7-a74a-4a18-853e-3a8c1d467d63"
+            isDerived="false"
+            sourceEndRoleName="Wróg"
+            targetEndRoleName="Pokazuje się"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8a1f89ca-081c-4763-8e7e-088e1e1f9d23"
+              LastKnownName="Pokazuje się"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="976d17a3-f395-46a1-8d0a-5e70d0dfc9ec"
+                  name="Wróg"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ba391b2-9608-4c92-9ec2-09a1903f5f68"
+                  name="Pokazuje się"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e0724f93-c803-4e9e-b20a-8c5a5a7b3325"
+        name="Strzela"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8a1f89ca-081c-4763-8e7e-088e1e1f9d23"
+        name="Pokazuje się"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f761fdea-f22b-4c3a-b1f9-bb4cba4c1927"
+        name="Świat"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cc96c214-19bd-4ebb-b515-e555f90503b0"
+            isDerived="false"
+            sourceEndRoleName="Świat"
+            targetEndRoleName="Tworzy wrogów"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b25f5c0b-429f-49fb-bc21-56ff3e39e00c"
+              LastKnownName="Tworzy wrogów"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25bf5e37-9ed3-4fc8-a740-3a916321f416"
+                  name="Świat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7c768cb-99f3-4d29-8fd7-c7915c29a6a0"
+                  name="Tworzy wrogów"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a99851a4-09ac-47c9-8232-388ddab6ef0b"
+            isDerived="false"
+            sourceEndRoleName="Świat"
+            targetEndRoleName="Przeprowadza do następnej rundy"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="41408086-26d8-4206-a380-10c88382277e"
+              LastKnownName="Przeprowadza do następnej rundy"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d67ee4d-6b7c-4026-a943-0bed88d6050e"
+                  name="Świat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f293983-156f-454a-866a-2b69bf864bac"
+                  name="Przeprowadza do następnej rundy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bdeca0f4-0993-445b-81ac-598294ef237e"
+            isDerived="false"
+            sourceEndRoleName="Świat"
+            targetEndRoleName="Sprawdza trafienia"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f75caeb3-88d1-48ce-b73d-0cad078772a6"
+              LastKnownName="Sprawdza trafienia"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe32503f-ae3a-4b44-bd07-710523f05d8f"
+                  name="Świat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a31cbbfb-da09-4a90-90e2-e9b8e43bb74f"
+                  name="Sprawdza trafienia"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="18cb5bcc-ab04-43ac-a005-17661dfdd3a1"
+            isDerived="false"
+            sourceEndRoleName="Świat"
+            targetEndRoleName="Wyświetla historię"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d32a8cf7-586e-4b33-8b95-7e34ba7eba25"
+              LastKnownName="Wyświetla historię"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d6f683da-9651-4f59-a646-5d9098123a3f"
+                  name="Świat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be153bbe-16b5-4d74-861d-8e8b790fed08"
+                  name="Wyświetla historię"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b25f5c0b-429f-49fb-bc21-56ff3e39e00c"
+        name="Tworzy wrogów"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="41408086-26d8-4206-a380-10c88382277e"
+        name="Przeprowadza do następnej rundy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f75caeb3-88d1-48ce-b73d-0cad078772a6"
+        name="Sprawdza trafienia"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d32a8cf7-586e-4b33-8b95-7e34ba7eba25"
+        name="Wyświetla historię"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5904becd-e3e2-4d41-8ef9-d74433382b5a"
+        name="Player"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ec95227e-c6c5-4149-96ae-8c0cb3794898"
+            isDerived="false"
+            sourceEndRoleName="Gracz"
+            targetEndRoleName="Gra"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4330a959-a5fe-40f9-bdaa-c056f951e984"
+              LastKnownName="Game"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="97f594d9-468c-494f-a72f-a6048529c161"
+                  name="Gracz"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9520a5d4-7039-4374-882c-e57f6697cc54"
+                  name="Gra"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="60ba00b6-5c9f-4661-b310-15b8bcc3311e"
+            name="Life"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4330a959-a5fe-40f9-bdaa-c056f951e984"
+        name="Game"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9a0e08aa-6d5b-4220-812e-b40621b60b84"
+        name="Fable"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6eb1c1c2-a4d8-4e46-a442-c38fdfe6ea34"
+            isDerived="false"
+            sourceEndRoleName="Fable"
+            targetEndRoleName="Game"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4330a959-a5fe-40f9-bdaa-c056f951e984"
+              LastKnownName="Game"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f36e7311-60e4-41f3-a4ea-43239b04018a"
+                  name="Fable"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d7ff6bd-26e9-4d49-9225-3348fcef312b"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d08e2116-7721-4c0a-9850-e466b3f3b2bc"
+        name="Level"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e40dbf9a-cb50-45bf-8ae8-9a07dc508635"
+            isDerived="false"
+            sourceEndRoleName="Level"
+            targetEndRoleName="Fable"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9a0e08aa-6d5b-4220-812e-b40621b60b84"
+              LastKnownName="Fable"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0065aa6b-b75b-48ba-8935-3ac458d90e68"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3839630d-e4a8-45c2-89b9-4ef08c65f862"
+                  name="Fable"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1d8875f6-858e-4127-8a90-19362f96b084"
+            name="Bitmap"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9388a621-d924-48af-9a78-946d1ef4b91e"
+            name="PlacesForEnemies"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4f0a2255-e256-4a11-89bc-2e761760f317"
+        name="Enemy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="702a8208-04b7-4f01-95b9-72d1a3f81c80"
+            isDerived="false"
+            sourceEndRoleName="Enemy"
+            targetEndRoleName="Level"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d08e2116-7721-4c0a-9850-e466b3f3b2bc"
+              LastKnownName="Level"
+              LastKnownLocation="Modele.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d21e352-ecbe-4389-83c9-828c6317360e"
+                  name="Enemy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ab6d0a95-6dc3-49ec-b5e6-377ee1ab50b9"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="354bd9e1-a4b3-4e3f-8ce5-c2af6a7e6117"
+                      name="Upper"
+                      value="." />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a92cf52-a766-4671-9ff1-4cc55d37532d"
+                  name="Level"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="aa97cf70-1def-4503-b156-70ac73111ed4"
+            name="ShowTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

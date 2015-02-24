@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e90aa8c5-88e1-4894-b972-d16989dbe552" name="Glowny" linkedPackageId="50b87551-58da-4a03-b3ba-127d55fbb196" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="72e64070-75ae-4cd0-b70e-49d2094362a3">
+      <profileInstance Id="59d7ddab-d3dd-47bb-acc8-62f7a39357b3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4bc882d3-aa5a-4cb1-89fd-18fc80b6d1f3">
+      <profileInstance Id="2df642b5-a061-43af-b61e-92af0687f852" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d252ff26-9fad-4454-a750-4faa3885c583" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5904becd-e3e2-4d41-8ef9-d74433382b5a" />
+        <targetEnds>
+          <association Id="99a49c04-1540-43a2-8e1a-455c0f519d4d" isDerived="false" sourceEndRoleName="Gracz" targetEndRoleName="Gra" isLeaf="false" isAbstract="false">
+            <classMoniker Id="24eaf07d-81d4-416e-a2e9-368624f4500d" LastKnownName="Game" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2fd25173-cede-483f-b82c-9a4aa866c5a4" name="Gracz" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="97f594d9-468c-494f-a72f-a6048529c161" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cb56b4a-a1b8-40de-96af-831df9215223" name="Gra" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9520a5d4-7039-4374-882c-e57f6697cc54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ec95227e-c6c5-4149-96ae-8c0cb3794898" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="165f9dce-3141-48dc-9473-e4de68a1dab6" name="Life" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="60ba00b6-5c9f-4661-b310-15b8bcc3311e" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="24eaf07d-81d4-416e-a2e9-368624f4500d" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4330a959-a5fe-40f9-bdaa-c056f951e984" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="962432b2-6da5-4794-9df2-eaa66554412e" name="Fable" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9a0e08aa-6d5b-4220-812e-b40621b60b84" />
+        <targetEnds>
+          <association Id="c7f56934-cb7f-42c0-b37c-610039244fa0" isDerived="false" sourceEndRoleName="Fable" targetEndRoleName="Game" isLeaf="false" isAbstract="false">
+            <classMoniker Id="24eaf07d-81d4-416e-a2e9-368624f4500d" LastKnownName="Game" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41a6bf9c-104f-4b24-8a5a-3e9db8169366" name="Fable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f36e7311-60e4-41f3-a4ea-43239b04018a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a0daea6-e429-4a16-a7d6-7a469b554a7d" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1d7ff6bd-26e9-4d49-9225-3348fcef312b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6eb1c1c2-a4d8-4e46-a442-c38fdfe6ea34" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e64351af-d609-4d9c-8f88-4150b4de7337" name="Level" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d08e2116-7721-4c0a-9850-e466b3f3b2bc" />
+        <targetEnds>
+          <association Id="8f3ee9e3-ac76-4340-8bfa-4a30bf0446e1" isDerived="false" sourceEndRoleName="Level" targetEndRoleName="Fable" isLeaf="false" isAbstract="false">
+            <classMoniker Id="962432b2-6da5-4794-9df2-eaa66554412e" LastKnownName="Fable" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa19db1f-4639-4083-b3c6-fedf2f6bcd48" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0065aa6b-b75b-48ba-8935-3ac458d90e68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63fe65ae-35cd-4e1c-bd4d-9c24d2ef486e" name="Fable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3839630d-e4a8-45c2-89b9-4ef08c65f862" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e40dbf9a-cb50-45bf-8ae8-9a07dc508635" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="dfc73998-1259-4839-ab24-3ad0ffbe3cc0" name="Bitmap" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1d8875f6-858e-4127-8a90-19362f96b084" />
+          </property>
+          <property Id="ebdeecf9-8a53-4dcf-8f74-2033a9a56d3e" name="PlacesForEnemies" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9388a621-d924-48af-9a78-946d1ef4b91e" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c695b3c-7724-4584-bc87-e8442cea9614" name="Enemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4f0a2255-e256-4a11-89bc-2e761760f317" />
+        <targetEnds>
+          <association Id="fb5a6f6e-9a84-40a2-a2f2-9bdda8c50bd1" isDerived="false" sourceEndRoleName="Enemy" targetEndRoleName="Level" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e64351af-d609-4d9c-8f88-4150b4de7337" LastKnownName="Level" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5eedd810-b190-46e0-bc47-2bfbc4297916" name="Enemy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="ce264446-4a43-4aca-b1e5-8bc616b90992" name="Lower">
+                      <elementDefinition Id="ab6d0a95-6dc3-49ec-b5e6-377ee1ab50b9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="878cfd3b-cd4e-4239-acfa-18a5b3e5c97e" name="Upper" value=".">
+                      <elementDefinition Id="354bd9e1-a4b3-4e3f-8ce5-c2af6a7e6117" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="6d21e352-ecbe-4389-83c9-828c6317360e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="694a9351-3386-492f-8ab6-0dc12d29b916" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a92cf52-a766-4671-9ff1-4cc55d37532d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="702a8208-04b7-4f01-95b9-72d1a3f81c80" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="1296f1f5-6256-4afc-a451-5dd0a4109fb6" name="ShowTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aa97cf70-1def-4503-b156-70ac73111ed4" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="50b87551-58da-4a03-b3ba-127d55fbb196" name="Modele">
+    <elementDefinition Id="61f443f9-166c-4ceb-a2bc-211604d80bdc" />
+  </package>
+</logicalClassDesignerModel>
